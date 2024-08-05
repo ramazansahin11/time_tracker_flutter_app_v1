@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:time_tracker/model/task.dart';
 
-const String serverUrl = 'http://192.168.56.1:8000';
+const String serverUrl = '......';
 
 Future<List<Task>> fetchTasks() async {
   final response = await http.get(Uri.parse('$serverUrl/api/task'));
